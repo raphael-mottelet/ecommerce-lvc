@@ -5,6 +5,7 @@
 
 
 //
+/*
 import { 
     PRODUCT_LIST_REQUEST,
     PRODUCT_LIST_SUCCESS,
@@ -33,3 +34,4 @@ export const productListReducers = (state = {products:[] }, action) => {
             return state
     }
 }
+*/
