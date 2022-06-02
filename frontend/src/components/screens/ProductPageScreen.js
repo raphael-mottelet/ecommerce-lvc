@@ -28,8 +28,8 @@ function ProductPage() {
 
     async function fetchProducts() {
 
-      const { data } = await axios.get(`/products/`)
-      setProducts(data)
+      const { data_products } = await axios.get(`/products/`)
+      setProducts(data_products)
     }
 
     fetchProducts()
@@ -37,10 +37,9 @@ function ProductPage() {
   }, [])
 
 
-
 //on renvoie des objets spécifiques à product, par exemple "_id", venant tout droit de la base de donnée consultée par axios
 return (
-    <div>
+    <div className='fondpage'>
         <h1 className='texteProduit'>Nos Produits</h1>
         <Row>
             {products.map(products => (

@@ -1,0 +1,164 @@
+
+:root {
+  --heights1: 80vh;
+  --widths1: 100%;
+}
+
+.slide-texXt {
+  color: red;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 500px;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+}
+
+.slide-image1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+/*
+.slide-title {
+  background-color: rgb(181, 138, 64);
+  max-width: 20%;
+  max-height: 150px;
+  display: inline-flex;
+  text-align: center;
+}
+*/
+
+.slide-title1,
+.slide-text1 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 200px;
+  text-align: center;
+  top: 40%;
+  z-index: 10;
+}
+
+.slide-text {
+  top: 65%;
+  font-size: 2rem;
+}
+
+.prev2,
+.next2 {
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.prev2:hover,
+.next2:hover {
+  color: rgb(221, 123, 10);
+  background-color: rgba(136, 136, 136, 0.336);
+  border: 2px solid rgba(34, 34, 34, 0.61);
+}
+
+.next2 {
+  right: 0;
+  border-radius: 50px 50px 50px 50px;
+  
+}
+
+.prev2 {
+  border-radius: 50px 50px 50px 50px;
+}
+
+.all-dots2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  top: 85%;
+  justify-content: center;
+  z-index: 200;
+}
+
+.dot2 {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0px 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot2,
+.dot2:hover {
+  background-color: rgba(238, 152, 40, 0.726);
+}
+
+@media (max-width:1400px) {
+  .slide-title1,
+  .slide-text1 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width:700px) {
+  .slide-image1{
+    margin-top: 115px;
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    object-fit:fill;
+    flex: 1 1 auto;
+  }
+  .prev2:hover,
+  .next2:hover {
+  border: 1px solid rgba(34, 34, 34, 0.61);
+  margin-top: -170px;
+  }
+  .prev2,
+  .next2 {
+    margin-top: -170px;
+  }
+  .active-dot2,
+  .dot2:hover {
+    margin-top: -260px;
+  }
+  .dot2 {
+    margin-top: -260px;
+  }
+  .slider-container {
+    margin-bottom: -370px;
+  }
+  .slide-title1,
+  .slide-text1 {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+}

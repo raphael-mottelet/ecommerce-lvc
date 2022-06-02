@@ -1,40 +1,57 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { Row, Col, Image, ListGroup, Button, Card, ListGroupItem} from 'react-bootstrap'
-import Rating from '../../components/Rating'
-import axios from 'axios'
+
+import Rating from '../Rating'
+import Loader from '../loader'
+import Message from '../Message'
+
+import { useDispatch, useSelector} from 'react-redux'
+import { listProductsDetails } from '../../actions/productActions'
+import { PRODUCT_CREATE_REVIEW_RESET } from '../../constants/productConstants'
+import './ProductScreen.css'
+import './favbutton.css'
 //import products from '../../products'
 
 
-function ProductScreen({match}) {
+function ProductScreen({match, history}) {
+    const[qty, setQty] = useState(1)
+    const[rating, setRating] = useState(0)
+    const[comment, setComment] = useState('')
 
 
-    const [product, setProduct] = useState([])
+    const dispatch = useDispatch()
+    const productDetails = useSelector(state => state.productDetails)
+    const { loading, error, product} = productDetails
+
+    const userLogin = useSelector(state => state.productDetails)
+    const { userInfo} = userLogin
+
+    const productReviewCreate = useSelector(state => state.productDetails)
+    const { loading:loadingProductReview, 
+        error:errorProductReview,
+        error:successProductReview} = productReviewCreate
+
 
     useEffect(() => {
-  
-      async function fetchProduct() {
-  
-        const { data } = await axios.get(`/products/${match.params.id}`)
-        setProduct(data)
-      }
-  
-      fetchProduct()
-  
-    }, [])
+        dispatch(listProductsDetails(match.params.id))
+    }, [dispatch, match])
+
+    //let product = {}
 
   return (
-    <div>
+    <div className='page'>
         <Link to='/' className='btn btn-light my-3'>
             Retour Arriere
         </Link>
 
-        <div className='h3'>
-        {product.name}
-        </div>
-
-        <Row>
-            <Col>
+        {loading ?
+            <Loader/>
+            : error
+                ? <Message variant='danger'>{error}</Message>
+            :(
+                <Row>
+                <Col>
                 <Image src={product.image} alt={product.name} fluid />
             </Col>
 
@@ -50,6 +67,10 @@ function ProductScreen({match}) {
 
                     <ListGroup.Item>
                         marque: {product.brand}
+                    </ListGroup.Item>
+
+                    <ListGroup.Item>
+                        categorie: {product.Tags}
                     </ListGroup.Item>
 
                     <ListGroup.Item>
@@ -88,6 +109,17 @@ function ProductScreen({match}) {
                                 </Col>
                             </Row>
                         </ListGroup.Item>
+
+                        <ListGroup>
+                            <Row>
+                                <Col>
+                                Ajouter aux favoris
+                                </Col>
+                                <Button className='favbutton'>
+                                <i class="fa-solid fa-heart"></i>
+                                </Button>
+                            </Row>
+                        </ListGroup>
                         
                     {/*créer un boutton d'achat, le boutton est désactivé lorsque la condition vérifie que le stock est == à 0
                         
@@ -102,6 +134,9 @@ function ProductScreen({match}) {
             </Col>
 
         </Row>
+            )
+        }
+
     </div>
   )
 }

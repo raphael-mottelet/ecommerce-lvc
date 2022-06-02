@@ -8,4 +8,5 @@ admin.site.register(Reaction)
 admin.site.register(Commande)
 admin.site.register(ItemCommande)
 admin.site.register(AdresseLivraison)
+admin.site.register(Favorite)
 

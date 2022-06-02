@@ -1,0 +1,3 @@
+le fichier serializer sert à hash les données mais aussi à renvoyer le status des utilisateur pour qu'il soit traité en fonction de la permission retournée.
+le fichier view renvoie les vues voulues du frontend en fonction des restrictions utilisateur
+le fichier urls gere les url 

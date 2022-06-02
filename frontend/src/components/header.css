@@ -1,0 +1,11 @@
+@media (max-width: 1920px){
+    .logo-lvc {
+        margin-left: -150px;
+    }
+}
+
+@media (max-width: 1540px){
+    .logo-lvc {
+        margin-left: 0px;
+    }
+}

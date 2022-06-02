@@ -1,21 +1,23 @@
 import React, {useState, useEffect} from 'react'
 import Product from '../../components/Product'
 import './homescreen.css'
+import AutoSlider from '../../components/auto-slider/Slider'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { Row, Col } from 'react-bootstrap'
+import { listProducts } from '../../actions/productActions'
+import Loader from '../../components/loader'
+import Message from '../../components/Message'
 //import { listProducts } from '../../actions/productActions'
 
 
-import axios from 'axios'
-
 function HomeScreen() {
 
-  const [products, setProducts] = useState([])
+  //const [products, setProducts] = useState([])
 
-  //const dispatch = useDispatch()
+  const dispatch = useDispatch()
   const productList = useSelector(state => state.productList)
-  //const {error, loading, products} = productList
+  const {error, loading, products} = productList
 
  /* useEffect(() => {
 
@@ -25,7 +27,8 @@ function HomeScreen() {
 
 //on recupere via l'url /product qui nous permet de recuperer les données en JSON des produits
   useEffect(() => {
-
+    dispatch(listProducts())
+/*
     async function fetchProducts() {
 
       const { data } = await axios.get(`/products/`)
@@ -33,24 +36,33 @@ function HomeScreen() {
     }
 
     fetchProducts()
+    */
 
-  }, [])
+  }, [dispatch])
 
 
-
+//const products = []
 //on renvoie des objets spécifiques à product, par exemple "_id", venant tout droit de la base de donnée consultée par axios
 return (
-    <div>
+  
+    <div className='fondpage'>
         <h1 className='texteProduit'>Nos Produits récents</h1>
-        <Row>
-            {products.map(products => (
-                <Col key={products._id} sm={12} md={6} lg={4} xl={3}>
-                    <Product product={products}/>
-                </Col>
-            ))}
-        </Row>
+        {loading ? <Loader/>
+        //on passe {error} comme un "children" dans le composant Message, renvoi une erreur 500 si pas de pages ou probleme avec api
+            : error ? <Message variant='danger'>{error}</Message>
+                :
+                <Row>
+                    {products.map(products => (
+                        <Col key={products._id} sm={12} md={6} lg={4} xl={3}>
+                            <Product product={products}/>
+                        </Col>
+                    ))}
+                </Row>
+        
+      }
     </div>
   )
 }
 
 export default HomeScreen
+
