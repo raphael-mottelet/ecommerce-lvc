@@ -24,6 +24,11 @@
   font-size:  45px;
 }
 
+.lien-login{
+  text-decoration: none !important;
+  margin-bottom: 15px;
+}
+
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;
@@ -35,7 +40,7 @@
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  width: 70vw;
+  width: 48vw;
   justify-content: end;
   margin-right: 2rem;
 }

@@ -9,6 +9,7 @@ import { Row, Col } from 'react-bootstrap'
 import { listProducts } from '../../actions/productActions'
 import Loader from '../../components/loader'
 import Message from '../../components/Message'
+import Card1 from './new screens/cardscreen'
 
 //import { listProducts } from '../../actions/productActions'
 
@@ -50,6 +51,8 @@ return (
     <AutoSlider/>
     <Parallax/>
         <h1 className='texteProduit'>Nos Produits récents</h1>
+
+        
         {loading ? <Loader/>
         //on passe {error} comme un "children" dans le composant Message, renvoi une erreur 500 si pas de pages ou probleme avec api
             : error ? <Message variant='danger'>{error}</Message>
@@ -60,8 +63,7 @@ return (
                             <Product product={products}/>
                         </Col>
                     ))}
-                </Row>
-        
+                </Row>        
       }
   </div>
   )

@@ -49,6 +49,9 @@ function Header() {
               <Link to='/profile'>
                   <NavDropdown.Item>Profile</NavDropdown.Item>
               </Link>
+              <Link to=''>
+              <NavDropdown.Item>Administration</NavDropdown.Item>
+              </Link>
               <NavDropdown.Item onClick={logoutHandler}>Deconnexion</NavDropdown.Item>
           </NavDropdown>
         ): (

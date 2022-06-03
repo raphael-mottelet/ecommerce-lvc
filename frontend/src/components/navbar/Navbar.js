@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import logo from './img/lvc-logo.svg';
+import { Nav, NavDropdown} from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux'
+import {logout} from '../../actions/userActions'
+
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -12,6 +17,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   
+
   const showButton = () => {
     if (window.innerWidth <=960) {
       setButton(false);
@@ -36,6 +42,19 @@ function Navbar() {
     }
   };
 
+
+  const userLogin = useSelector(state => state.userLogin)
+  //on renvoie les infos de l'user lors de sa connexion
+  const {userInfo} = userLogin
+
+  const dispatch = useDispatch()
+
+  const logoutHandler = () => {
+    dispatch((logout))
+    //dispatchEvent((logout))   precdedente erreur
+  }
+
+
   return (
     <>
     <nav className={navbar ? 'navbar active' : 'navbar'}/>
@@ -53,7 +72,7 @@ function Navbar() {
             </Link>
           </li>
           <li
-            className='nav-item'b
+            className='nav-item'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
@@ -99,6 +118,25 @@ function Navbar() {
           </li>
         </ul>
         <div className='blur-effect'></div>
+
+        {userInfo ? (
+          <NavDropdown title={userInfo.name} id='username' className='lien-login'>
+              <Link to='/profile'>
+                  <NavDropdown.Item>Profil</NavDropdown.Item>
+              </Link>
+              <Link to='/http://localhost:8000/admin/'>
+              <NavDropdown.Item>Administration</NavDropdown.Item>
+              </Link>
+              <NavDropdown.Item onClick={logoutHandler}>Deconnexion</NavDropdown.Item>
+          </NavDropdown>
+        ): (
+          <Link 
+          to='/login'
+          className='nav-links, lien-login'
+          onClick={closeMobileMenu}>
+                  <Nav.Link href="/login"><i className="fas fa-user"></i>Connexion</Nav.Link>
+          </Link>
+        )}
       </nav>
     </>
   );
