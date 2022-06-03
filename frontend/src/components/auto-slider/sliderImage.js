@@ -12,4 +12,10 @@ export default [
     logo:"",
     urls: Fith,
   },
+  {
+    title: "",
+    description: "c'est l'été à la vie claire! profitez de reductions sur les fruits et légumes",
+    logo:"",
+    urls: Sixth,
+  },
 ];

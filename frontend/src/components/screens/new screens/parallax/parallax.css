@@ -1,0 +1,21 @@
+@font-face {
+    font-family: FrenteH1;
+    src: local("FrenteH1-Regular");
+}
+
+.parallax-text {
+    font-size: 14px;
+    font-family: FrenteH1-Regular;
+    color: yellowgreen;
+}
+
+.inlineStyle {
+    background: '#fff';
+    left: '50%';
+    top: '50%';
+    position: 'absolute';
+    padding: '20px';
+    transform: 'translate(-50%, -50%)';
+    margin-top: 100px;
+    height: 200px;
+    }

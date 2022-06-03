@@ -58,12 +58,13 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/product/:id'
+              to='/Produit'
               className='nav-links'
               onClick={closeMobileMenu}
             >
-              Nos Vins <i className='' />
+              Produits <i className='fas fa-caret-down' />
             </Link>
+            {dropdown && <Dropdown />}
           </li>
           <li 
           className='nav-item'>
@@ -94,13 +95,6 @@ function Navbar() {
               onClick={closeMobileMenu}
             >
               Contact
-            </Link>
-            <Link
-              to='/'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              
             </Link>
           </li>
         </ul>

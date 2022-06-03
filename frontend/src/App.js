@@ -15,10 +15,9 @@ import RegisterScreen from './components/screens/RegisterScreen'
 
 function App() {
   return (
-          //<Navbar/>
-
     <Router>
       <Header/>
+      <Navbar/>
       
       <main className="py-3">
         <Container>
