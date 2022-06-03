@@ -36,7 +36,7 @@ function VinsScreen({match, history}) {
           <>
             <li className='cards__item__vins'>
               <Link className='cards__item__link__vins' to='/'>
-                <figure className='cards__item__pic-wrap__vins' data-category={product.Tags}>
+                <figure className='cards__item__pic-wrap__vins' data-category={product.price}>
                   <img
                     className='cards__item__img__vins'
                     alt=''
