@@ -41,13 +41,11 @@ function ProductPage() {
 return (
     <div className='fondpage'>
         <h1 className='texteProduit'>Nos Produits</h1>
-        <Row>
             {products.map(products => (
-                <Col key={products._id} sm={12} md={6} lg={4} xl={3}>
+                <div key={products._id} sm={12} md={6} lg={4} xl={3}>
                     <Product product={products}/>
-                </Col>
+                </div>
             ))}
-        </Row>
     </div>
   )
 }

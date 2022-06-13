@@ -14,7 +14,7 @@ import './favbutton.css'
 //import products from '../../products'
 
 
-function ProductScreen({match, history}) {
+function ProductScreen({match}) {
     const[qty, setQty] = useState(1)
     const[rating, setRating] = useState(0)
     const[comment, setComment] = useState('')
@@ -40,7 +40,9 @@ function ProductScreen({match, history}) {
     //let product = {}
 
   return (
-    <div className='page'>
+    <div >
+    <div className='buffer-page'>.</div>
+    <div className='fond-page'>
         <Link to='/' className='btn btn-light my-3'>
             Retour Arriere
         </Link>
@@ -109,17 +111,6 @@ function ProductScreen({match, history}) {
                                 </Col>
                             </Row>
                         </ListGroup.Item>
-
-                        <ListGroup>
-                            <Row>
-                                <Col>
-                                Ajouter aux favoris
-                                </Col>
-                                <Button className='favbutton'>
-                                <i class="fa-solid fa-heart"></i>
-                                </Button>
-                            </Row>
-                        </ListGroup>
                         
                     {/*créer un boutton d'achat, le boutton est désactivé lorsque la condition vérifie que le stock est == à 0
                         
@@ -137,6 +128,7 @@ function ProductScreen({match, history}) {
             )
         }
 
+    </div>
     </div>
   )
 }

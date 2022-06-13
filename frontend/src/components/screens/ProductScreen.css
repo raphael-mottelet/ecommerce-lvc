@@ -1,4 +1,12 @@
-.page {
-    margin-top: 150px;
-    max-width: 110%;
+
+
+.buffer-page {
+    background-color: antiquewhite;
+    height: 150px;
+}
+
+.fond-page {
+    background-color: antiquewhite;
+    height: 813px;
+    margin-bottom: -200px;
 }

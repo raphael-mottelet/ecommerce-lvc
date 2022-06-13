@@ -6,7 +6,7 @@ import './vins-card.css'
 export default function Product({product}) {
     return (
 
-        <div className='1cards__vins'>
+        <div className='cards__vins'>
 <div className='cards__container__vins'>
   <div className='cards__wrapper__vins'>
     <ul className='cards__items__vins'>
@@ -14,7 +14,7 @@ export default function Product({product}) {
         <li className='cards__item__vins'>
         <Link className='cards__item__link__vins' to={`/product/${product._id}`}>
 
-          <figure className='cards__item__pic-wrap__vins' data-category={product.price}>{product.stock}
+          <figure className='cards__item__pic-wrap__vins' data-category={product.price}>
             <Link to={`/product/${product._id}`}>
                 
             <img
@@ -43,7 +43,7 @@ export default function Product({product}) {
 
 
         /*        <Card className="my-3 p-3 rounded" pill="10">
-            <Link to={`/product/${product._id}`}>
+            <Link to= {`/product/${product._id}`}>
                 <Card.Img src={product.image}/>
             </Link>
 

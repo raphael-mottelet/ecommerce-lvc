@@ -12,7 +12,7 @@
 }
 
 .cards__container__vins {
-  display: flex;
+  display: inline-flex;
   flex-flow: column;
   align-items: center;
   max-width: 100%;

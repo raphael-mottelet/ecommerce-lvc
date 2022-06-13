@@ -115,7 +115,7 @@ function RegisterScreen({location, history}) {
         <Col>
         Déja inscrit ? <Link //on crée un redirect, si on a une redirection on envoi l'user sur s'enregistrer, 
         //avec la valeur de ce que l'on passe, si on a pas de redirect reste sur la page d'neregistrement sans parametres suplémentaires
-        to={redirect ? `/register?redirect=${redirect}` : '/register'}
+        to={redirect ? `/login?redirect=${redirect}` : '/login'}
         >Se Connecter</Link>
         </Col>
             </Row>

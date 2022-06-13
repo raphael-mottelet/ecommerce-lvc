@@ -4,10 +4,15 @@
 
 .fondpage{
     background: rgba(255, 244, 164, 0.308);
+    margin-bottom: -113px;
 
 
 }
 
 .container{
     max-width: 110%;
+}
+
+.hey {
+    display: inline;
 }
