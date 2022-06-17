@@ -1,17 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-import './vins-card.css'
+import '../bootstrap.min.css'
+import './vins-card-1.css'
 
 export default function Product({product}) {
     return (
 
-        <div className='1cards__vins'>
-<div className='cards__container__vins'>
-  <div className='cards__wrapper__vins'>
-    <ul className='cards__items__vins'>
+        <div className='vins__container1'>
+<div className='cards__container__vins1'>
+  <div className='cards__wrapper__vins1'>
+    <ul className='cards__items__vins1'>
 
-        <li className='cards__item__vins'>
+        <li className='cards__item__vins1'>
         <Link className='cards__item__link__vins' to={`/product/${product._id}`}>
 
           <figure className='cards__item__pic-wrap__vins' data-category={product.price}>{product.stock}
@@ -26,9 +26,9 @@ export default function Product({product}) {
             </Link>
           </figure>
 
-          <div className='cards__item__info__vins'>
+          <div className='cards__item__info__vins1'>
             <Link to={`/product/${product._id}`}>
-            <h5 className='cards__item__text__vins'>{product.name}</h5>
+            <h5 className='cards__item__text__vins1'>{product.name}</h5>
             </Link>
           </div>
 

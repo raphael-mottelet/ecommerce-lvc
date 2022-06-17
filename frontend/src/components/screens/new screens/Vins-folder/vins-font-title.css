@@ -1,0 +1,72 @@
+.vins-main-title {
+    padding: 30px;
+    font-family: 'Gill sans, sans retif';
+    color: brown;
+    border-top: solid brown;
+    border-bottom: solid brown;
+    max-width: 25%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    position: flex;
+    margin-bottom: 100px;
+    font-family: 'Gill-sans', 'sans-serif';
+}
+
+.vins-title {
+    padding: 30px;
+    font-family: 'Gill sans, sans retif';
+    color: brown;
+    position: center;
+    border-bottom: solid brown ;
+    max-width: 23%;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Gill-sans', 'sans-serif';
+}
+
+@media (max-width: 1520px) {
+    .vins-title {
+        font-size: 17px;
+    }
+    .vins-main-title {
+        max-width: 28%;
+        font-size: 19px;
+        padding: 28px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .vins-title {
+        font-size: 18px;
+    }
+    .vins-main-title {
+        max-width: 32%;
+        font-size: 19px;
+        padding: 23px;
+    }
+}
+
+@media (max-width: 930px) {
+    .vins-title {
+        font-size: 18px;
+        max-width: 50%;
+    }
+    .vins-main-title {
+        max-width: 60%;
+        font-size: 19px;
+        padding: 22px;
+    }
+}
+
+@media (max-width: 500px) {
+    .vins-title {
+        max-width: 100%;
+        font-size: 19px;
+    }
+    .vins-main-title {
+        max-width: 100%;
+        font-size: 18px;
+    }
+}

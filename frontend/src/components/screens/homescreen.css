@@ -5,6 +5,7 @@
 .fondpage{
     background: rgba(255, 244, 164, 0.308);
     margin-bottom: -113px;
+    max-width:100%;
 
 
 }
@@ -13,6 +14,12 @@
     max-width: 110%;
 }
 
-.hey {
+.items-container {
+    display:inline-flex;
+}
+
+.vins-items {
     display: inline;
+    overflow:auto;
+    max-width: none;
 }
