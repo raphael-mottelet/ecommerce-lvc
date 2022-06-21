@@ -1,34 +1,34 @@
-.vinsbackground1 {
+.vinsbackground {
   margin-top: 116px;
   margin-bottom: 30px;
   width: 100%;
   height: 80%;
 }
 
-.vins__container1 {
-  max-width: 1920px;
+.vins__container {
+  max-width: 100%;
 }
 
-.cards__container__vins1 {
-  /**display: flex;
+.cards__container__vins {
+  display: flex;
   flex-flow: column;
   align-items: center;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;**/
+  text-align: center;
 }
 
-.cards__wrapper__vins1 {
+.cards__wrapper__vins {
   position: relative;
   margin: 50px 0 45px;
 }
 
-.cards__items__vins1 {
+.cards__items__vins {
   margin-bottom: 24px;
   text-align: center;
 }
 
-.cards__item__vins1 {
+.cards__item__vins {
   display: inline-flex;
   text-align: justify;
   margin: 0 1rem;
@@ -40,7 +40,7 @@
   max-width: 1920px;
 }
 
-.cards__item__link__vins1 {
+.cards__item__link__vins {
   display: flex;
   flex-flow: column;
   width: 100%;
@@ -53,19 +53,19 @@
   text-decoration: none;
 }
 
-.cards__item__pic-wrap__vins1 {
+.cards__item__pic-wrap__vins {
   position: relative;
   width: 100%;
   padding-top: 67%;
   overflow: hidden;
 }
 
-.fade-img1 {
+.fade-img {
   animation-name: fade-img;
   animation-duration: 2s;
 }
 
-.cards__item__pic-wrap__vins::after1 {
+.cards__item__pic-wrap__vins::after {
   content: attr(data-category);
   position: absolute;
   bottom: 0;
@@ -79,7 +79,7 @@
   box-sizing: border-box;
 }
 
-.cards__item__img__vins1 {
+.cards__item__img__vins {
   position: absolute;
   top: 0;
   right: 0;
@@ -95,94 +95,85 @@
 
 }
 
-.cards__item__img__vins:hover1 {
+.cards__item__img__vins:hover {
   transform: scale(1.1);
 }
 
-.cards__item__info__vins1 {
+.cards__item__info__vins {
   padding: 20px 30px 30px;
   height: 100px;
   border-top: solid rgba(165, 42, 42, 0.411) 2px;
 }
 
-.cards__item__text__vins1 {
+.cards__item__text__vins {
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
 }
 
-@media (max-width: 1400px)1 {
-  .cards__item__vins1 {
-    height: 9%;
-    width: 30%;
-  }
+@media (max-width: 1400px) {
 
-  .cards__vins1 {
-    margin-bottom: 40px;
-  }
 }
 
-@media (max-width: 1000px)1 {
-  .cards__item__vins1 {
-    height: 6%;
-    width: 40%;
+@media (max-width: 1000px) {
+  .cards__item__vins {
+
   }
 
-  .cards__vins1 {
+  .cards__vins {
     margin-bottom: 40px;
   }
-  .cards__item__text__vins1 {
+  .cards__item__text__vins {
     font-size: 16px;
   }
 }
 
-@media (max-width: 670px)1 {
-  .cards__item__vins1 {
-    height: 6%;
-    width: 43%;
+@media (max-width: 670px) {
+  .cards__item__vins {
+
   }
 
-  .cards__vins1 {
+  .cards__vins {
     margin-top: -220px;
     margin-bottom: 10px;
   }
 
-  .cards__item__text__vins1 {
+  .cards__item__text__vins {
     font-size: 15px;
   }
 }
 
-@media (max-width: 500px)1 {
-  .cards__item__vins1 {
+@media (max-width: 500px) {
+  .cards__item__vins {
     height: 3%;
     width: 65%;
     padding: 8px;
   }
-  .cards__item__text__vins1 {
+  .cards__item__text__vins {
     font-size: 14px;
   }
 
-  .cards__vins1 {
+  .cards__vins {
     margin-bottom:-110%;
   }
 
-  .cards__item__info__vins1 {
+  .cards__item__info__vins {
     height: 80px;
   }
 
-  .cards__items__vins1 {
+  .cards__items__vins {
     margin-bottom: 460px;
   }
 
 }
 
-@media (max-width: 450px)1 {
-  .cards__item__vins1 {
+@media (max-width: 450px) {
+  .cards__item__vins {
     height: 3%;
     width: 60%;
     padding: 8px;
   }
-  .cards__item__text__vins1 {
+  .cards__item__text__vins {
     font-size: 13px;
   }
 }

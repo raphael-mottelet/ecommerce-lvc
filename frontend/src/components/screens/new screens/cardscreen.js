@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector} from 'react-redux'
 import { listProductsDetails } from '../../../actions/productActions'
 import { PRODUCT_CREATE_REVIEW_RESET } from '../../../constants/productConstants'
-import './cardscreen.css'
 //import products from '../../products'
 
 
