@@ -1,0 +1,18 @@
+.-pains-texteProduit {
+    margin-top: 250px;
+}
+
+.pains-fondpage{
+    background: rgba(255, 244, 164, 0.308);
+    margin-bottom: -113px;
+
+
+}
+
+.pains-items{
+    display: inline-flex;
+}
+
+.pains-items-container1 {
+    padding-left: 7%;
+}

@@ -57,7 +57,7 @@ export default function Vins() {
           </li>
           <li className='vins-li'>
           <Link
-              to='/autrevins'
+              to='/autres'
               className='vins-liens'
             >
               Autres Vins

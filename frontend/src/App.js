@@ -15,8 +15,10 @@ import VinRouge from './components/screens/new screens/Vins-folder/vin-rouge'
 import VinBlanc from './components/screens/new screens/Vins-folder/vin-blanc'
 import Champagne from './components/screens/new screens/Vins-folder/champagne'
 import VinRose from './components/screens/new screens/Vins-folder/vin-rose'
-import Autres from './components/screens/new screens/Vins-folder/autres'
-import VinsTest from './components/screens/new screens/Vins-folder/vins-test'
+import AutresVins from './components/screens/new screens/Vins-folder/autres-vins'
+
+import Pains from './components/screens/new screens/pain-folder/pain'
+import ProductScreenPains from './components/screens/new screens/pain-folder/ProductScreen-pains'
 
 
 
@@ -37,15 +39,17 @@ function App() {
 
           
 
-          
+          <Route path='/Pains' component={Pains}/>
+          <Route path='/product/:id' component={ProductScreenPains}/>
+
+
           <Route path='/Vins' component={VinRouge}/>
           <Route path='/vinrouge' component={VinRouge}/>
           <Route path='/vinblanc' component={VinBlanc}/>
           <Route path='/vinrose' component={VinRose}/>
           <Route path='/champagne' component={Champagne}/>
           <Route path='/bieres' component={Bieres}/>
-          <Route path='/autres' component={Autres}/>
-          <Route path='/vinstest' component={VinsTest}/>
+          <Route path='/autresvins' component={AutresVins}/>
 
 
 

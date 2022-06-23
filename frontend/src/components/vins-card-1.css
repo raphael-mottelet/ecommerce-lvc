@@ -6,7 +6,7 @@
 }
 
 .vins__container {
-  max-width: 100%;
+  max-width: 110%;
 }
 
 .cards__container__vins {
@@ -145,9 +145,6 @@
 
 @media (max-width: 500px) {
   .cards__item__vins {
-    height: 3%;
-    width: 65%;
-    padding: 8px;
   }
   .cards__item__text__vins {
     font-size: 14px;

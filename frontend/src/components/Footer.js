@@ -1,8 +1,9 @@
 import React from 'react'
+import './Footer.css'
 
 function Footer() {
   return (
-    <div>
+    <div className='fond-page-footer'>
         <footer>
             <div>
                 <div>

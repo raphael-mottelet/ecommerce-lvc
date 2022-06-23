@@ -19,9 +19,10 @@
     color: brown;
     position: center;
     border-bottom: solid brown ;
-    max-width: 23%;
+    max-width: fit-content;
     height: 70px;
     margin: auto;
+    margin-bottom: 50px;
     text-align: center;
     font-family: 'Gill-sans', 'sans-serif';
 }

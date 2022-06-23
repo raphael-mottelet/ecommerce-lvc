@@ -1,0 +1,90 @@
+.page-container__pain {
+    background-color: rgb(250, 245, 227);
+    margin-bottom: -60px;
+}
+
+.tampoon {
+    color: transparent;
+    height: 200px;
+    background-color: rgb(250, 245, 227);
+}
+
+.inlineStyle {
+    background: '#fff';
+    left: '50%';
+    top: '50%';
+    position: 'absolute';
+    padding: '20px';
+    transform: 'translate(-50%, -50%)';
+    margin-top: 100px;
+    height: 200px;
+    }
+
+.parallax {
+    margin-top: 117px;
+}
+
+
+
+.pain-titre {
+    color: rgb(230, 215, 82);
+    font-family: sans-serif, 'Gill Sans';
+    border-bottom: solid rgb(230, 215, 82);
+    text-align: center;
+    max-width: 30%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.pain-title {
+    color: rgb(230, 215, 82);
+    font-family: sans-serif, 'Gill Sans';
+    border-top: solid rgb(230, 215, 82);
+    border-bottom: solid rgb(230, 215, 82);
+    border-left: solid rgb(230, 215, 82);
+    border-right: solid rgb(230, 215, 82);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 30%;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.pain-numero-info {
+    margin: auto;
+    margin-top: 80px;
+    font-size: 20px;
+    font-family: 'Gill Sans', sans-serif;
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+
+@media (max-width: 500px)  {
+    .pain-paragraph{
+        max-width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 500px)  {
+    .pain-title {
+        max-width: 150%;
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px)  {
+    .pain-titre {
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .cards {
+        margin: auto;
+    }
+    .tampoon {
+        height: 30px;
+    }
+}

@@ -50,19 +50,10 @@ export default function Vinsnav (){
     </li>
     <li className='vins-li'>
     <Link
-        to='/autrevins'
+        to='/autresvins'
         className='vins-liens'
         >
         Autres Vins
-        </Link>
-
-    </li>
-        <li className='vins-li'>
-    <Link
-        to='/vintest'
-        className='vins-liens'
-        >
-        test
         </Link>
 
     </li>

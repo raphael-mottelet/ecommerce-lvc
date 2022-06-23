@@ -8,7 +8,6 @@ import { listProducts } from '../../actions/productActions'
 import Loader from '../../components/loader'
 import Message from '../../components/Message'
 
-import VinsNav from './new screens/Vins-folder/vins-nav/vins-nav'
 //import Card1 from './new screens/cardscreen'
 
 //import { listProducts } from '../../actions/productActions'
@@ -37,7 +36,6 @@ return (
   <div className='fondpage'>
     <Parallax/>
         <h1 className='texteProduit'></h1>
-        <VinsNav/>
 
         
         {loading ? <Loader/>
