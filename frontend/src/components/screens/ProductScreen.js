@@ -8,9 +8,10 @@ import Message from '../Message'
 
 import { useDispatch, useSelector} from 'react-redux'
 import { listProductsDetails } from '../../actions/productActions'
-import { PRODUCT_CREATE_REVIEW_RESET } from '../../constants/productConstants'
+//import { PRODUCT_CREATE_REVIEW_RESET } from '../../../../constants/productConstants'
 import './ProductScreen.css'
 import './favbutton.css'
+
 //import products from '../../products'
 
 

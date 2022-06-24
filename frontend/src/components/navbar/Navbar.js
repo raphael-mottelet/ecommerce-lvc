@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
 import logo from './img/lvc-logo.svg';
-import { Nav, NavDropdown} from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import {logout} from '../../actions/userActions'
-
 
 
 function Navbar() {
@@ -117,9 +115,7 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        <div className='blur-effect'></div>
-
-        {userInfo ? (
+        {/**{userInfo ? (
           <NavDropdown title={userInfo.name} id='username' className='lien-login'>
               <Link to='/profile'>
                   <NavDropdown.Item>Profil</NavDropdown.Item>
@@ -136,7 +132,7 @@ function Navbar() {
           onClick={closeMobileMenu}>
                   <Nav.Link href="/login"><i className="fas fa-user"></i>Connexion</Nav.Link>
           </Link>
-        )}
+        )}**/}
       </nav>
     </>
   );

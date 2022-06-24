@@ -18,5 +18,10 @@ export const MenuItems = [
     title: 'Vrac',
     path: '/Vrac',
     cName: 'dropdown-link'
+  },
+  {
+    title: 'Promo',
+    path: '/petitprix',
+    cName: 'dropdown-link'
   }
 ];

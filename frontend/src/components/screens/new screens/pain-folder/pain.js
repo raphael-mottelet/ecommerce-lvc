@@ -7,6 +7,8 @@ import { listProducts } from '../../../../actions/productActions'
 import Loader from '../../../loader'
 import Message from '../../../Message'
 
+import PainsNav from './pain-nav/pains-nav'
+
 import './pains-screen.css'
 import './pain.css'
 
@@ -31,7 +33,7 @@ export default function Pains() {
     <div className='fondpage'>
     <img className='vinsbackground' src={""} alt=''/>
     <h2 className='pain-title'>Nos Pains</h2>
-            
+            <PainsNav/>
         {loading ? <Loader/>
         //on passe {error} comme un "children" dans le composant Message, renvoi une erreur 500 si pas de pages ou probleme avec api
             : error ? <Message variant='danger'>{error}</Message>

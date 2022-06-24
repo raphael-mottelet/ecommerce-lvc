@@ -20,6 +20,11 @@ import AutresVins from './components/screens/new screens/Vins-folder/autres-vins
 import Pains from './components/screens/new screens/pain-folder/pain'
 import ProductScreenPains from './components/screens/new screens/pain-folder/ProductScreen-pains'
 
+import PetitPrix from './components/screens/new screens/petits-prix-bio/pp-cosmetique';
+import PromoMois from './components/screens/new screens/petits-prix-bio/promo-mois';
+import PetitPrixCosmetique from './components/screens/new screens/petits-prix-bio/pp-cosmetique';
+
+
 
 
 
@@ -42,6 +47,9 @@ function App() {
           <Route path='/Pains' component={Pains}/>
           <Route path='/product/:id' component={ProductScreenPains}/>
 
+          <Route path='/petitprix' component={PetitPrix}/>
+          <Route path='/petitprix_cosmetique' component={PetitPrixCosmetique}/>
+          <Route path='/promomois' component={PromoMois}/>
 
           <Route path='/Vins' component={VinRouge}/>
           <Route path='/vinrouge' component={VinRouge}/>

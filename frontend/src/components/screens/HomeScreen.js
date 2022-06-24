@@ -38,19 +38,7 @@ return (
         <h1 className='texteProduit'></h1>
 
         
-        {loading ? <Loader/>
-        //on passe {error} comme un "children" dans le composant Message, renvoi une erreur 500 si pas de pages ou probleme avec api
-            : error ? <Message variant='danger'>{error}</Message>
-                :
-                <ul className='items-container1'>
-                    {products.map(products => (
-                        <ul className='vins-items'key={products._id} >
-                            <Product product={products}/>
-                        </ul>
-                    ))}
-                </ul>        
-      }
-      {/*sm={12} md={6} lg={4} xl={3}*/}
+
   </div>
   )
 }

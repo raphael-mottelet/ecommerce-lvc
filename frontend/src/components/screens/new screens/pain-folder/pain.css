@@ -27,9 +27,9 @@
 
 
 .pain-titre {
-    color: rgb(230, 215, 82);
+    color: rgb(16, 16, 16, 0.768);
     font-family: sans-serif, 'Gill Sans';
-    border-bottom: solid rgb(230, 215, 82);
+    border-bottom: solid rgb(16, 16, 16, 0.768);
     text-align: center;
     max-width: 30%;
     padding: 30px;
@@ -40,12 +40,12 @@
 }
 
 .pain-title {
-    color: rgb(230, 215, 82);
+    color: rgb(16, 16, 16, 0.768);
     font-family: sans-serif, 'Gill Sans';
-    border-top: solid rgb(230, 215, 82);
-    border-bottom: solid rgb(230, 215, 82);
-    border-left: solid rgb(230, 215, 82);
-    border-right: solid rgb(230, 215, 82);
+    border-top: solid rgb(16, 16, 16, 0.768);
+    border-bottom: solid rgb(16, 16, 16, 0.768);
+    border-left: solid rgb(16, 16, 16, 0.768);
+    border-right: solid rgb(16, 16, 16, 0.768);
     border-radius: 10px;
     text-align: center;
     max-width: 30%;
@@ -72,8 +72,11 @@
 
 @media (max-width: 500px)  {
     .pain-title {
-        max-width: 150%;
+        max-width: 100%;
         font-size: 18px;
+        border-left: none;
+        border-right: none;
+        border-radius: 0px;
     }
 }
 @media (max-width: 500px)  {

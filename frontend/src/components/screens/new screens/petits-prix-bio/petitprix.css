@@ -1,0 +1,121 @@
+.text-title-petitprix {
+    color: #1A886E;
+    border-radius: 10px;
+    font-family: 'Gill Sans', sans-serif;
+    border-bottom: solid #1A886E;
+    border-top: solid #1A886E;
+    border-left: solid #1A886E;
+    border-right: solid #1A886E;
+    padding: 30px;
+    max-width: 25%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.balise-p-petitprix {
+    margin: auto;
+    margin-top: 40px;
+    max-width: 60%;
+    font-size: 20px;
+    font-family: 'Gill Sans', sans-serif;
+    text-align: justify;
+}
+
+.petitprix-paragraph {
+    text-align: center;
+    font-family: 'Gill Sans', sans-serif;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 35px;
+    
+}
+
+.petitprix-img-container{
+    display: inline-flexbox;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 40px;
+    padding: 15px;
+}
+.titre-pp {
+    margin-top: 40px;
+    /*border-bottom:solid #1A886E;*/
+    text-align: center;
+    /*color: #1A886E;*/
+    max-width: 30%;
+    margin:auto;
+    font-size: 30px;
+    padding:10px;
+}
+
+.boostersonmois{
+    text-align: center;
+    margin: auto;
+    margin-bottom: -90px;
+}
+
+.petitprix-page-container {
+    background: linear-gradient( rgb(250, 245, 227),rgb(255, 255, 255));
+}
+
+.content-container-petitprix {
+    background-color: transparent;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 25px;
+    margin-bottom: 150px;
+    height: flex;
+    margin-top: 120px;
+}
+
+.paragraph-petitprix {
+    text-align: center;
+}
+
+.tampoon-petitprix {
+    color: transparent;
+    background-color: rgb(250, 245, 227);
+}
+
+@media (max-width:1800px) {
+    .titre-pp {
+        font-size: 28px;
+        max-width: calc((50%) - 60px);
+    }
+    .text-title-petitprix {
+        max-width: 50%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1160px){
+    .titre-pp {
+        font-size: 23px;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    .boostersonmois img{
+        max-width: 100%;
+    }
+    .titre-pp {
+        padding: 10px;
+        margin-top: 30px;
+        font-size: 21px;
+        max-width: 80%;
+    }
+    .text-title-petitprix {
+        font-size: 20px;
+        max-width: 100%;
+        padding: 18px;
+        margin: auto;
+    }
+    .petitprix-img-container {
+        margin-top: 140px;
+        display: inline-block;
+    }
+}
