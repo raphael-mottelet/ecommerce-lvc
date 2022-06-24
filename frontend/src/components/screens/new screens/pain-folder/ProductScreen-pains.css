@@ -1,9 +1,11 @@
 
 
-.buffer-page {
+.buffer-page-pains {
+    background-color: rgb(250, 245, 227);
     height: 150px;
 }
 
-.fond-page {
+.fond-page-pains {
+    background-color: rgb(250, 245, 227);
     height: 800px;
 }

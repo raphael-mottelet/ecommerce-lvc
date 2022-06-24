@@ -41,8 +41,8 @@ function ProductScreen({match}) {
 
   return (
     <div >
-    <div className='buffer-page'>.</div>
-    <div className='fond-page'>
+    <div className='buffer-page-pains'>.</div>
+    <div className='fond-page-pains'>
         <Link to='/Pains' className='btn btn-light my-3'>
             Retour Arriere
         </Link>
@@ -52,7 +52,7 @@ function ProductScreen({match}) {
             : error
                 ? <Message variant='danger'>{error}</Message>
             :(
-                <Row>
+                <div>
                 <Col>
                 <Image src={product.image} alt={product.name} fluid />
             </Col>
@@ -124,7 +124,7 @@ function ProductScreen({match}) {
                 </Card>
             </Col>
 
-        </Row>
+        </div>
             )
         }
 
