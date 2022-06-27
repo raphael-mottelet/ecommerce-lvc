@@ -4,6 +4,7 @@ from rest_framework import serializers
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 from .models import Produit, Reaction, Favorite
+from taggit.serializers import (TagListSerializerField, TaggitSerializer)
 
 class UserSerializers(serializers.ModelSerializer):
     name = serializers.SerializerMethodField(read_only=True)
@@ -49,7 +50,8 @@ class FavoriteSerializer(serializers.ModelSerializer):
         model = Favorite
         fields = '__all__'
 
-class ProductSerializer(serializers.ModelSerializer):
+class ProductSerializer(TaggitSerializer, serializers.ModelSerializer):
+    tags = TagListSerializerField()
     class Meta:
         model = Produit
         fields = '__all__'

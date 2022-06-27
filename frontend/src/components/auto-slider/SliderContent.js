@@ -1,5 +1,6 @@
 import React from "react";
 import './slider.css';
+import './sliderImage'
 
 //la classe slide-logo permet d'inserer un logo sur l'image du slide.
 

@@ -9,7 +9,7 @@ export default function Painsnav (){
     <ul className=''>
     <li className='pains-li'>
     <Link
-        to='/Pains'
+        to='/pains-levin'
         className='pains-liens'
         >
         Levin
@@ -17,7 +17,7 @@ export default function Painsnav (){
     </li>
     <li className='pains-li'>
     <Link
-        to='/Pains'
+        to='/sansgluten'
         className='pains-liens'
         >
         Sans Gluten
@@ -25,7 +25,7 @@ export default function Painsnav (){
     </li>
     <li className='pains-li'>
     <Link
-        to='/Pains'
+        to='/baguette'
         className='pains-liens'
         >
         Baguettes
@@ -33,7 +33,7 @@ export default function Painsnav (){
     </li>
     <li className='pains-li'>
     <Link
-        to='/Pains'
+        to='/tranche'
         className='pains-liens'
         >
         Tranche

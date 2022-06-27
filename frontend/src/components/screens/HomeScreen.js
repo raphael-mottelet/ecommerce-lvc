@@ -35,10 +35,8 @@ function HomeScreen() {
 return (
   <div className='fondpage'>
     <Parallax/>
+    <AutoSlider/>
         <h1 className='texteProduit'></h1>
-
-        
-
   </div>
   )
 }

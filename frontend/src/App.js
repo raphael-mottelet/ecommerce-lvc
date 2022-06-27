@@ -17,7 +17,10 @@ import Champagne from './components/screens/new screens/Vins-folder/champagne'
 import VinRose from './components/screens/new screens/Vins-folder/vin-rose'
 import AutresVins from './components/screens/new screens/Vins-folder/autres-vins'
 
-import Pains from './components/screens/new screens/pain-folder/pain'
+import PainsBaguette from './components/screens/new screens/pain-folder/pain-levin'
+import PainsSansGluten from './components/screens/new screens/pain-folder/pain-tranche'
+import PainsLevin from './components/screens/new screens/pain-folder/painbaguette'
+import PainsTranche from './components/screens/new screens/pain-folder/pain-sansgluten'
 import ProductScreenPains from './components/screens/new screens/pain-folder/ProductScreen-pains'
 
 import PetitPrix from './components/screens/new screens/petits-prix-bio/pp-cosmetique';
@@ -44,7 +47,12 @@ function App() {
 
           
 
-          <Route path='/Pains' component={Pains}/>
+          <Route path='/sans-gluten' component={PainsSansGluten}/>
+          <Route path='/baguettes' component={PainsBaguette}/>
+          <Route path='/tranche' component={PainsTranche}/>
+          <Route path='/levin' component={PainsLevin}/>
+          <Route path='/Pains' component={PainsLevin}/>
+
           <Route path='/product/:id' component={ProductScreenPains}/>
 
           <Route path='/petitprix' component={PetitPrix}/>

@@ -47,7 +47,7 @@ export default function VinRose() {
                 :
                 <ul className='items-container1'>
                     {products.map(products => (
-                        <ul className='vins-items'key={products._id} >
+                        <ul className='vins-items'key={products._id$1} >
                             <Product product={products}/>
                         </ul>
                     ))}
