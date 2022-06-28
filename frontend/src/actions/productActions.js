@@ -18,7 +18,29 @@ export const listProducts = () => async (dispatch) => {
     try {
         dispatch({type: PRODUCT_LIST_REQUEST})
 
-        const { data } = await axios.get(`/products/`)
+        const { data } = await axios.get(`/products/?_id=2`)
+
+        dispatch({
+            type:PRODUCT_LIST_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: PRODUCT_LIST_FAIL,
+            payload: error.response && error.response.data.detail
+                ? error.response.data.detail
+                : error.message,
+        })
+
+    }
+}
+
+export const listTags = () => async (dispatch) => {
+    try {
+        dispatch({type: PRODUCT_LIST_REQUEST})
+
+        const { data } = await axios.get(`/taggit/`)
 
         dispatch({
             type:PRODUCT_LIST_SUCCESS,
@@ -36,6 +58,31 @@ export const listProducts = () => async (dispatch) => {
     }
 
 }
+
+export const listWines = () => async (dispatch) => {
+    try {
+        dispatch({type: PRODUCT_LIST_REQUEST})
+
+        const { data } = await axios.get(`/taggit/`)
+
+        dispatch({
+            type:PRODUCT_LIST_SUCCESS,
+            payload: data
+        })
+
+    } catch (error) {
+        dispatch({
+            type: PRODUCT_LIST_FAIL,
+            payload: error.response && error.response.data.detail
+                ? error.response.data.detail
+                : error.message,
+        })
+
+    }
+
+}
+
+
 
 export const listProductsDetails = (id) => async (dispatch) => {
     try {

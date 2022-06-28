@@ -97,3 +97,12 @@
         width: 450px;
     }
 }
+
+
+@media (max-width: 450px) {
+    .pains-liens {
+        padding: 7px;
+        width: 150px;
+        font-size: 14px;
+    }
+}
